@@ -1,13 +1,14 @@
-# Project Name
+# Wyatt's Hacknb Proxy Server
 
-> Project description
+This is Wyatt's proxy server for the 'Hacknb' Front-End Capstone project.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- [Neighborhood Map Project](https://github.com/The-Untouchables/neighborhood-map-service)
+- [Similar Listings](https://github.com/The-Untouchables/similar-listings-service)
+- [Reviews](https://github.com/The-Untouchables/reviews-service)
+- [Gallery](https://github.com/The-Untouchables/)
+- [Description](https://github.com/The-Untouchables/)
 
 ## Table of Contents
 
