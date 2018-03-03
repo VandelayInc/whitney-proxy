@@ -1,0 +1,26 @@
+.full-listing-page {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.center-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking {
+  position: sticky;
+  top: 0;
+  width: 40%;
+  height: 400px;
+}
+.details {
+  width: 60%;
+}
+
+
+div {
+  border: solid 1px black;
+  padding: 3px;
+  margin: 3px;
+}
