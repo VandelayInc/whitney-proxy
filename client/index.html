@@ -10,21 +10,56 @@
       <div class='center-column'>
 
         <div class='details'>
-          <div class='description'>
+          <div id='description'>
             <img src='1.png'>
             <img src='2.png'>
           </div>
-          <div class='reviews'><img src='3.png'></div>
+          <div id='reviews'><img src='3.png'></div>
           <div class='host'><img src='4.png'></div>
-          <div class='neighborhood'><img src='5.png'></div>
+          <div id='neighborhood' class='div-neighborhood'><img src='5.png'></div>
         </div>
 
-        <div class='booking'><img src='booking.png'></div>
+        <div class='booking' id='booking'><img src='booking.png'></div>
 
       </div>
 
-      <div class='similar-listings'><img src='6.png'></div>
+      <div id='similar-listings'><img src='6.png'></div>
       <div class='bottom-bar'><img src='7.png'></div>
     </div>
+
+    <!-- Stolen from Fred's example -->
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://localhost:3006/bundle.js"></script>
+    <script src="http://localhost:3007/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      ReactDOM.render(
+        React.createElement(Description),
+        document.getElementById('description')
+      );
+      ReactDOM.render(
+        React.createElement(Booking),
+        document.getElementById('booking')
+      );
+      ReactDOM.render(
+        React.createElement(Related),
+        document.getElementById('reviews')
+      );
+      ReactDOM.render(
+        React.createElement(Neighborhood),
+        document.getElementById('neighborhood')
+      );
+      ReactDOM.render(
+        React.createElement(SimilarListings),
+        document.getElementById('similar-listings')
+      );
+    </script>
+
+    <!-- End of stealing -->
+
   </body>
 </html>

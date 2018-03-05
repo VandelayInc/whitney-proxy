@@ -1,17 +1,28 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
+  "name": "proxy-server-wyatt",
+  "description": "> Project description",
+  "author": "Wyatt Fry",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
+    "express": "^4.16.2"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
+  },
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Untouchables/proxy-server-wyatt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/The-Untouchables/proxy-server-wyatt/issues"
+  },
+  "homepage": "https://github.com/The-Untouchables/proxy-server-wyatt#readme"
 }
