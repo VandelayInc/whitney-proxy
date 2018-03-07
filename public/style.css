@@ -6,6 +6,8 @@
 .center-column {
   display: flex;
   justify-content: space-between;
+  max-width: 1030px;
+  margin: 0 auto;
 }
 
 .booking {
@@ -18,10 +20,14 @@
   width: 60%;
 }
 
+.div-description-body {
+  width: inherit !important;
+  float: inherit !important;
+}
 /*
 div {
-  border: solid 1px black;
-  padding: 3px;
-  margin: 3px;
+  border: solid 1px green;
+  padding: 1px;
+  margin: 1px;
 }
 */
