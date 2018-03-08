@@ -1,5 +1,8 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const morgan = require('morgan');
+
+app.use(morgan('dev'));
 
 app.use('/rooms/:roomid', express.static(`${__dirname}/public/`));
 
@@ -13,9 +16,14 @@ app.get('/rooms/:roomid', (req,res) => {
   res.sendFile(`${__dirname}/public/index.html`);
 });
 
+// Photo Carousel Redirection
+app.get('/api/rooms/:roomid/carousel', (req, res) =>{
+  res.redirect(`http://18.222.4.195:3001/api/rooms/${req.params.roomid}/carousel`);
+});
+
 // Description Redirection
 app.get('/api/rooms/:roomid/description', (req,res) => {
-  res.redirect(`http://localhost:3002/api/rooms/${req.params.roomid}/description`);
+  res.redirect(`http://18.222.4.195/api/rooms/${req.params.roomid}/description`);
 });
 
 // Booking Redirection
@@ -25,18 +33,16 @@ app.get('/rooms/:roomid/bookings', (req,res) => {
 
 // Review Redirections
 app.get('/rooms/:roomid/reviews', (req,res) => {
-  res.redirect(`http://localhost:3004/rooms/${req.params.roomid}/reviews`);
+  res.redirect(`http://18.219.35.229/rooms/${req.params.roomid}/reviews`);
 });
-
 app.get('/rooms/:roomid/ratings', (req,res) => {
-  res.redirect(`http://localhost:3004/rooms/${req.params.roomid}/ratings`);
+  res.redirect(`http://18.219.35.229/rooms/${req.params.roomid}/ratings`);
 });
 
 // Similar Listing Redirection
 app.get('/rooms/:roomid/similarListings', (req,res) => {
   res.redirect(`http://localhost:3007/rooms/${req.params.roomid}/similarListings`);
 });
-
 app.get('/rooms/images/:imagefile', (req,res) => {
   res.redirect(`http://localhost:3007/images/${req.params.imagefile}`);
 });

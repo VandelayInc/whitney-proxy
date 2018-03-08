@@ -10,10 +10,12 @@
     "start": "nodemon server.js"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "morgan": "^1.9.0"
   },
   "version": "1.0.0",
   "main": "server.js",

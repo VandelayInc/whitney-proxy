@@ -2,11 +2,13 @@
 <html>
   <head>
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
   <body>
     <div class='full-listing-page'>
       <div class='top-bar'><img src='8.png'><img src='9.png'></div>
-      <div class='pictures'><img src='listing_photo.jpg'></div>
+      <div class='pictures' id='photo-carousel-service'><img src='listing_photo.jpg'></div>
       <div class='center-column'>
 
         <div class='details'>
@@ -19,27 +21,21 @@
           <div id='neighborhood'><img src='5.png'></div>
         </div>
 
-        <div class='booking' id='booking-service'><img src='booking.png'></div>
+        <div class='booking' id='bookings-service'><img src='booking.png'></div>
 
       </div>
 
-      <div id='app'><img src='6.png'></div>
+      <div id='listings'><img src='6.png'></div>
       <div class='bottom-bar'><img src='7.png'></div>
     </div>
 
     <!-- Stolen from Fred's example -->
-<!-- 
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-     -->
-    <script src="http://localhost:3002/app-description.bundle.js"></script>
+    <script src="http://18.222.4.195:3001/photo-carousel.bundle.js"></script>
+    <script src="http://18.222.4.195/app-description.bundle.js"></script>
     <script src="http://localhost:3003/bundle.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://18.219.35.229/bundle.js"></script>
     <script src="http://localhost:3006/bundle.js"></script>
     <script src="http://localhost:3007/bundle.js"></script>
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-
-
     <!-- End of stealing -->
 
   </body>
