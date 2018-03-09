@@ -39,6 +39,14 @@ app.get('/rooms/:roomid/ratings', (req,res) => {
   res.redirect(`http://18.219.35.229/rooms/${req.params.roomid}/ratings`);
 });
 
+// Neighborhood Redirection
+app.get('/rooms/:roomid/neighborhood', (req, res) => {
+  res.redirect(`http://18.188.46.228/rooms/${req.params.roomid}/neighborhood`);
+});
+app.get('/api/neighborhood/:roomid', (req, res) => {
+  res.redirect(`http://18.188.46.228/api/neighborhood/${req.params.roomid}`);
+});
+
 // Similar Listing Redirection
 app.get('/rooms/:roomid/similarListings', (req,res) => {
   res.redirect(`http://localhost:3007/rooms/${req.params.roomid}/similarListings`);
